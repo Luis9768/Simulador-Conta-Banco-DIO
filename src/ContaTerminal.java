@@ -6,7 +6,10 @@ public class ContaTerminal {
         Scanner scanner = new Scanner(System.in);
         String name = "Luís Miguel";
         double saldo = 456.48;
-
+        
+        System.out.println("Digite seu CPF");
+        int cpf = scanner.nextInt();
+        
         System.out.println("Digite o número da agência: ");
         String agence = scanner.nextLine();
 
@@ -14,7 +17,7 @@ public class ContaTerminal {
         int number = scanner.nextInt();
 
         System.out.println("\n-----------------------------------");
-        System.out.print("Olá "+name+" obrigado por criar uma conta em nosso banco,\n sua agência é ");
+        System.out.print("Olá "+name+" "+cpf+" obrigado por criar uma conta em nosso banco,\n sua agência é ");
         System.out.println(agence + " conta "+number+" e seu saldo de "+saldo+" ja está disponível para saque.");
         System.out.println("-----------------------------------");
 
